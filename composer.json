@@ -18,6 +18,9 @@
   },
   "scripts": {
     "test": "phpunit",
-    "phpstan": "phpstan analyse src tests -l 7 -c phpstan.neon"
+    "phpstan": "phpstan analyse src tests -l 7 -c phpstan.neon",
+    "coverage": [
+      "test -d extension=xdebug.so --coverage ./coverage.xml --coverage-src ./src tests/"
+    ]
   }
 }

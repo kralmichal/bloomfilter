@@ -2,6 +2,7 @@
 
 namespace Hashing;
 
+use Hashing\Functions\IFunction;
 use Hashing\Functions\Md5Function;
 use Hashing\Functions\Sha1Function;
 use SplFixedArray;
@@ -9,6 +10,9 @@ use SplFixedArray;
 final class BloomFilter
 {
 
+	/**
+	 * @var IFunction[]
+	 */
 	private $hashFunctions;
 
 	/**
@@ -55,7 +59,7 @@ final class BloomFilter
 	 * @param mixed $input
 	 * @return bool
 	 */
-	public function check($input): bool
+	public function test($input): bool
 	{
 		foreach ($this->hashFunctions as $function) {
 			$value = abs($function((string)$input));
@@ -69,7 +73,7 @@ final class BloomFilter
 	}
 
 	/**
-	 * @param callable[] $functions
+	 * @param IFunction[] $functions
 	 */
 	public function setHashFunctions(array $functions): void
 	{

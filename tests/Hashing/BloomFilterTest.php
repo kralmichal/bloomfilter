@@ -17,11 +17,11 @@ final class BloomFilterTest extends TestCase
 		$filter->insert(1);
 		$filter->insert(500);
 
-		static::assertTrue($filter->check(1));
-		static::assertTrue($filter->check(500));
-		static::assertFalse($filter->check(2650));
-		static::assertFalse($filter->check(PHP_INT_MAX));
-		static::assertFalse($filter->check(-9));
+		static::assertTrue($filter->test(1));
+		static::assertTrue($filter->test(500));
+		static::assertFalse($filter->test(2650));
+		static::assertFalse($filter->test(PHP_INT_MAX));
+		static::assertFalse($filter->test(-9));
 	}
 
 	public function testSetFunctions(): void
@@ -46,11 +46,11 @@ final class BloomFilterTest extends TestCase
 		$filter->insert(1);
 		$filter->insert(500);
 
-		static::assertTrue($filter->check(1));
-		static::assertTrue($filter->check(500));
-		static::assertFalse($filter->check(2650));
-		static::assertFalse($filter->check(PHP_INT_MAX));
-		static::assertFalse($filter->check(-9));
+		static::assertTrue($filter->test(1));
+		static::assertTrue($filter->test(500));
+		static::assertFalse($filter->test(2650));
+		static::assertFalse($filter->test(PHP_INT_MAX));
+		static::assertFalse($filter->test(-9));
 	}
 
 }
