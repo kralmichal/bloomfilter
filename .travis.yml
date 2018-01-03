@@ -23,7 +23,7 @@ jobs:
       install:
         - travis_retry composer update --no-progress --prefer-dist --prefer-lowest
       script:
-        - composer run-script tes
+        - composer run-script test
 #
 #    - stage: Quality Assurance
 #      php: 7.1
