@@ -32,7 +32,7 @@ final class BloomFilterTest extends TestCase
 			new class implements IFunction
 			{
 				/**
-				 * @param $value
+				 * @param mixed $value
 				 * @return int
 				 */
 				public function __invoke($value): int
