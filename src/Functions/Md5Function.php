@@ -6,7 +6,7 @@ final class Md5Function implements IFunction
 {
 
 	/**
-	 * @param $value
+	 * @param mixed $value
 	 * @return int
 	 */
 	public function __invoke($value): int

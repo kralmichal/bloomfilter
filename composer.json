@@ -2,11 +2,17 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "phpunit/phpunit": "^6.5"
+    "phpunit/phpunit": "^6.5",
+    "phpstan/phpstan": "^0.9.1",
+    "phpstan/phpstan-strict-rules": "^0.9.0"
   },
   "autoload": {
     "psr-4": {
       "Hashing\\": "src"
     }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "phpstan": "phpstan analyse src -l 7 -c phpstan.neon"
   }
 }

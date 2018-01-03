@@ -40,7 +40,7 @@ final class BloomFilter
 	}
 
 	/**
-	 * @param $input
+	 * @param mixed $input
 	 */
 	public function insert($input): void
 	{
@@ -52,7 +52,7 @@ final class BloomFilter
 	}
 
 	/**
-	 * @param $input
+	 * @param mixed $input
 	 * @return bool
 	 */
 	public function check($input): bool
