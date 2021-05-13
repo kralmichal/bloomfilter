@@ -16,7 +16,7 @@ final class BloomFilter
 	private $hashFunctions;
 
 	/**
-	 * @var \SplFixedArray
+	 * @var \SplFixedArray<int>
 	 */
 	private $storage;
 

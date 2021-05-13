@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 final class BloomFilterTest extends TestCase
 {
 
-	public function testInsert()
+	public function testInsert(): void
 	{
 		$filter = new BloomFilter();
 
