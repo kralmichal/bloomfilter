@@ -24,21 +24,12 @@ jobs:
       script:
         - composer run-script test
 
-    - stage: Test Coverage
-      php: 8.0
-      script:
-        - composer run-script coverage
-      after_script:
-        - wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar
-        - php coveralls.phar --verbose --config tests/.coveralls.yml
-
     - stage: Phpstan
       php: 8.0
       script:
         - composer run-script phpstan
 
   allow_failures:
-    - stage: Test Coverage
     - stage: Phpstan
 
 after_failure:
