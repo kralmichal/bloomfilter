@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1645829159">
+  <project timestamp="1645829159">
+    <file name="/var/www/bloomfilter/src/BloomFilter.php">
+      <class name="Hashing\BloomFilter" namespace="global">
+        <metrics complexity="8" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="20" coveredelements="20"/>
+      </class>
+      <line num="31" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="40" type="stmt" count="2"/>
+      <line num="41" type="stmt" count="2"/>
+      <line num="42" type="stmt" count="2"/>
+      <line num="49" type="method" name="insert" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="51" type="stmt" count="2"/>
+      <line num="52" type="stmt" count="2"/>
+      <line num="54" type="stmt" count="2"/>
+      <line num="62" type="method" name="test" visibility="public" complexity="3" crap="3" count="2"/>
+      <line num="64" type="stmt" count="2"/>
+      <line num="65" type="stmt" count="2"/>
+      <line num="67" type="stmt" count="2"/>
+      <line num="68" type="stmt" count="2"/>
+      <line num="72" type="stmt" count="2"/>
+      <line num="78" type="method" name="setHashFunctions" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="80" type="stmt" count="1"/>
+      <metrics loc="83" ncloc="61" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="20" coveredelements="20"/>
+    </file>
+    <file name="/var/www/bloomfilter/src/Functions/IFunction.php">
+      <metrics loc="14" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/var/www/bloomfilter/src/Functions/Md5Function.php">
+      <class name="Hashing\Functions\Md5Function" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="__invoke" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <metrics loc="16" ncloc="12" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/var/www/bloomfilter/src/Functions/Sha1Function.php">
+      <class name="Hashing\Functions\Sha1Function" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="__invoke" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="16" ncloc="12" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <metrics files="4" loc="129" ncloc="95" classes="3" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="24" coveredelements="24"/>
+  </project>
+</coverage>
