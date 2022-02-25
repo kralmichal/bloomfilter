@@ -25,12 +25,15 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
-    
+
     - name: Run test suite
       run: composer run-script test
 
     - name: phpunit-coverage-badge
       uses: timkrase/phpunit-coverage-badge@v1.2.0
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        push_badge: true
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
